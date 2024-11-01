@@ -2,22 +2,53 @@
 
 /* Set custom variables here */
 
+:root {
+  --primary-color: #2e483a;
+  --success-color: #2e483a;
+  --text-light: #f6f3ed;
+}
 
+.text-light {
+  color: var(--text-light);
+}
 
+.bg-primary {
+  background-color: var(--primary-color)!important;
+}
 
+.btn-success {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+  color: var(--text-light);
+}
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
 
-.navbar-brand {
-  color: #F6F3ED;
+.blockquote-footer {
+  color: var(--text-light);
+}
+.accordion-item,
+.accordion-button {
+  background-color: transparent;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: inherit;
 }
 
 body {
   font-family: "Sarala", sans-serif;
+  background-color: #F6F3ED;
 }
 
 h1, h2, h3 {
   font-family: "Merriweather", serif;
 }
 
+figcaption {
+  padding-top: 0 !important;
+}
 #hero {
   height: 800px;
   background-color: #E4E6DB;
@@ -42,12 +73,12 @@ h1, h2, h3 {
   height: 400px;
 }
 
-section:not(#hero):not(#cta){
+section:not(#hero):not(#cta):not(#faq):not(#testimonial){
   padding: 60px 0;
 }
 
 @media(min-width: 993px){
-  section:not(#hero):not(#cta){
-    padding: 100px 0;
+  section:not(#hero):not(#cta):not(#faq):not(#testimonial){
+    padding: 80px 0;
   }
 }
